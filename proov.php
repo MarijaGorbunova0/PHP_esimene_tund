@@ -40,4 +40,15 @@ $text2 = '     põhitoetus võitakse ära 11.11';
 echo "<br>";
 echo "<pre>".trim($text2)."</pre>";
 echo trim($text2, "h");
+echo '<br>';
+// text kui massiv, esimene täht
+echo "esimene täht - ".$text[0];
+echo '<br>';
+// leida kolnas sõna
+$sona = str_word_count($text,1);
+
+print_r($sona);
+echo "<br>";
+echo "kolmas sõna - ".$sona[2];
+
 ?>
