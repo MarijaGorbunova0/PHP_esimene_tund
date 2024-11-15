@@ -6,7 +6,7 @@ body{
 table td{
     border: solid 7px;
     border-radius: 10px;
-
+    border-color: #900C3F #581845 #900C3F #581845;
     margin: 100px auto 20px;
 
     background: #cce7ff;
@@ -24,12 +24,17 @@ table {
 }
 
 table td:hover {
-    border-color: #900C3F #581845 #900C3F #581845;
+    border-color: #581845 #900C3F #900C3F #581845;
 }
 h2{
     text-align: center;
 }
 #buttons{
+    display: flex;
+    justify-content: center;
+}
+
+form{
     display: flex;
     justify-content: center;
 }

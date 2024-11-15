@@ -1,5 +1,15 @@
 <?php
 $Opilased = simplexml_load_file("OpilasteAndmed.xml");
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["nimi"]) && isset($_POST["sugu"])) {
+        $uusOpilane = $Opilased->Addchild('opilane');
+        $uusOpilane->addChild('nimi', $_POST["nimi"]);
+        $uusOpilane->addChild('sugu', $_POST["sugu"]);
+        $Opilased->asXML();
+
+        $Opilased = simplexml_load_file("OpilasteAndmed.xml");
+    }
+    ;
 ?>
 <!doctype html>
 <html lang="en">
@@ -15,8 +25,9 @@ $Opilased = simplexml_load_file("OpilasteAndmed.xml");
 <body>
 <h2>Õpilased</h2>
 <form method="post" action="?">
-    <label for="otsing">Otsing: </label>
-    <input type="text" id="otsing" name="otsing" placeholder="Õpilane">
+    <label for="otsing">Uus </label>
+    <input type="text" id="nimi" name="nimi" placeholder="Õpilane">
+    <input type="text" id="sugu" name="sugu" placeholder="sugu">
     <input type="submit" value="OK">
     <br>
 </form>
@@ -58,6 +69,7 @@ $Opilased = simplexml_load_file("OpilasteAndmed.xml");
 
     }
     ?>
+
 
 </tr>
 </table>
