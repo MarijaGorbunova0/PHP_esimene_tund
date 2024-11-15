@@ -1,0 +1,35 @@
+body{
+    background: royalblue;
+    font-family: "Yu Gothic UI Semibold";
+}
+
+table td{
+    border: solid 7px;
+    border-radius: 10px;
+
+    margin: 100px auto 20px;
+
+    background: #cce7ff;
+    width: 200px;
+    height: 100px;
+}
+table {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: center;
+
+}
+
+table td:hover {
+    border-color: #900C3F #581845 #900C3F #581845;
+}
+h2{
+    text-align: center;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+}

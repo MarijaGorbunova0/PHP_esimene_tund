@@ -18,6 +18,9 @@
         <li>
             <a href="?leht=massivid.php">massivad</a>
         </li>
+        <li>
+            <a href="XML/autodxmlFailist.php" target="_blank">XML</a>
+        </li>
     </ul>
 </nav>
 
