@@ -1,16 +1,21 @@
+<?php if (isset($_GET['code'])){die(highlight_file(__FILE__));} ?>
+
 <?php
 $Opilased = simplexml_load_file("OpilasteAndmed.xml");
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["nimi"]) && isset($_POST["sugu"])) {
-        $uusOpilane = $Opilased->Addchild('opilane');
-        $uusOpilane->addChild('nimi', $_POST["nimi"]);
-        $uusOpilane->addChild('sugu', $_POST["sugu"]);
-        $Opilased->asXML();
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["nimi"]) && isset($_POST["sugu"])) {
+    $uusOpilane = $Opilased->addChild('opilane');
 
-        $Opilased = simplexml_load_file("OpilasteAndmed.xml");
-    }
-    ;
+    $uusOpilane->addChild('nimi', $_POST["nimi"]);
+    $uusOpilane->addChild('sugu', $_POST["sugu"]);
+    $uusOpilane->addChild('site', $_POST["koduleht"]);
+
+    $Opilased->asXML("OpilasteAndmed.xml");
+    $message = "Õpilane lisatud!";
+}
+
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -24,11 +29,13 @@ $Opilased = simplexml_load_file("OpilasteAndmed.xml");
 </head>
 <body>
 <h2>Õpilased</h2>
+<h2>TARpv23</h2>
 <form method="post" action="?">
-    <label for="otsing">Uus </label>
+    <label for="otsing">Uus</label>
     <input type="text" id="nimi" name="nimi" placeholder="Õpilane">
     <input type="text" id="sugu" name="sugu" placeholder="sugu">
-    <input type="submit" value="OK">
+    <input type="text" id="koduleht" name="koduleht" placeholder="koduleht">
+    <input type="submit" value="OK" id="BTok">
     <br>
 </form>
 <div id="buttons">
@@ -50,7 +57,7 @@ $Opilased = simplexml_load_file("OpilasteAndmed.xml");
 
         echo "<td><div id='[$index]' class='$genderClass'>"
             . $opilane->nimi . "<br>"
-            . "<a href='" . $opilane->site . "' target='_blank'>site</a>"
+            . "<a href='" . $opilane->site . "' target='_blank'>koduleht</a>"
             . "</div></td>";
         $index++;
         if ($opilane->sugu == "naine"){
@@ -69,8 +76,6 @@ $Opilased = simplexml_load_file("OpilasteAndmed.xml");
 
     }
     ?>
-
-
 </tr>
 </table>
 <script src="OpilaneScript.js"></script>

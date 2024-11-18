@@ -1,5 +1,5 @@
 body{
-    background: royalblue;
+    background: rgb(65, 105, 225);
     font-family: "Yu Gothic UI Semibold";
 }
 
@@ -9,14 +9,14 @@ table td{
     border-color: #900C3F #581845 #900C3F #581845;
     margin: 100px auto 20px;
 
-    background: #cce7ff;
+    background:rgb(204, 231, 255);
     width: 200px;
     height: 100px;
 }
 table {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
     border-collapse: separate;
     border-spacing: 10px;
     text-align: center;
@@ -25,6 +25,7 @@ table {
 
 table td:hover {
     border-color: #581845 #900C3F #900C3F #581845;
+    background: #eed2e9;
 }
 h2{
     text-align: center;
@@ -32,9 +33,13 @@ h2{
 #buttons{
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 
 form{
     display: flex;
     justify-content: center;
+}
+.BTok{
+    border: solid 7px;
 }

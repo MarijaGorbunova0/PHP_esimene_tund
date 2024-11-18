@@ -1,25 +1,28 @@
 <nav>
     <ul>
         <li>
-            <a href="?leht=proov.php">kodu</a>
+            <a href="?leht=proov.php">Kodu</a>
         </li>
         <li>
-            <a href="?leht=proov.php">teksi funktionid</a>
+            <a href="?leht=proov.php">Teksi funktionid</a>
         </li>
         <li>
-            <a href="?leht=moistatus.php">mõistatus</a>
+            <a href="?leht=moistatus.php">Mõistatus</a>
         </li>
         <li>
-            <a href="?leht=ajadfunktsioonid.php">ajafunktsioonid</a>
+            <a href="?leht=ajadfunktsioonid.php">Ajafunktsioonid</a>
         </li>
         <li>
-            <a href="?leht=pildid.php">pildid</a>
+            <a href="?leht=pildid.php">Pildid</a>
         </li>
         <li>
-            <a href="?leht=massivid.php">massivad</a>
+            <a href="?leht=massivid.php">Massivad</a>
         </li>
         <li>
-            <a href="XML/autodxmlFailist.php" target="_blank">XML</a>
+            <a href="XML/autodxmlFailist.php" target="_blank">Autod</a>
+        </li>
+        <li>
+            <a href="XML/Opilased/OpilasteXMLFailist.php" target="_blank">Õpilased</a>
         </li>
     </ul>
 </nav>
