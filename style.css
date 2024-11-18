@@ -1,3 +1,6 @@
+body{
+    background: #d7e4fc;
+}
 nav ul{
     display:flex;
     list-style-type: none;

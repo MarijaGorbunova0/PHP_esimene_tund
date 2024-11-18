@@ -31,18 +31,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["nimi"]) && isset($_POS
 <h2>Õpilased</h2>
 <h2>TARpv23</h2>
 <form method="post" action="?">
-    <label for="otsing">Uus</label>
-    <input type="text" id="nimi" name="nimi" placeholder="Õpilane">
-    <input type="text" id="sugu" name="sugu" placeholder="sugu">
-    <input type="text" id="koduleht" name="koduleht" placeholder="koduleht">
-    <input type="submit" value="OK" id="BTok">
+    <label for="otsing">lisada uus õpilane: </label>
+    <input type="text" id="nimi" name="nimi" placeholder="Õpilane" required>
+    <select id="sugu" name="sugu" >
+        <option value=" ">Vali sugu</option>
+        <option value="naine">Naine</option>
+        <option value="mees">Mees</option>
+    </select>
+    <input type="text" id="koduleht" name="koduleht" placeholder="Koduleht" required>
+    <input type="submit" value="OK" id="BTok" required>
     <br>
 </form>
 <div id="buttons">
     <label for="naine">naised</label>
-    <input type="checkbox" id="naine"  onchange="filterByGender()">
+    <input type="radio" id="naine"  onchange="filterByGender()">
     <label for="naine">mehed</label>
-    <input type="checkbox" id="mees"  onchange="filterByGender()">
+    <input type="radio" id="mees"  onchange="filterByGender()">
+    <label for="koik">kõik</label>
+    <input type="radio" id="koik"  onchange="filterByGender()">
 </div>
 
 <table>
