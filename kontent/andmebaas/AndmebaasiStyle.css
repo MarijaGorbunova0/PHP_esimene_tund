@@ -1,0 +1,31 @@
+
+  td {
+    border: 3px solid #993366;
+    border-collapse: collapse;
+     width: 100px;
+     text-align: center;
+}
+  th{
+      background: #b3b3ff;
+  }
+img{
+    width: 100px;
+    height: 100px;
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+form {
+    margin: auto;
+    width: 300px;
+    padding-top:10px;
+    text-align: center;
+}
+h1,h2{
+    display: flex;
+    justify-content: center;
+}
+input{
+margin: 10px;
+}
