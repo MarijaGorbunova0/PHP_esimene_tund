@@ -25,7 +25,10 @@
             <a href="XML/Opilased/OpilasteXMLFailist.php" target="_blank">Õpilased</a>
         </li>
         <li>
-            <a href="kontent/andmebaas/MatkaLisamine.php" target="_blank">Õpilased</a>
+            <a href="kontent/andmebaas/MatkaLisamine.php" target="_blank">Matka Lisamine</a>
+        </li>
+        <li>
+            <a href="kontent/andmebaas/Matkajad.php" target="_blank">Matka Osalejad</a>
         </li>
     </ul>
 </nav>

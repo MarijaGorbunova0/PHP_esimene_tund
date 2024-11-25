@@ -31,7 +31,6 @@ $paring->execute();
     <link rel="stylesheet" href="AndmebaasiStyle.css">
 </head>
 <body>
-<div id="all">
 <h1>Teie tabel</h1>
 <table>
     <tr>
@@ -41,6 +40,7 @@ $paring->execute();
         <th>telefon</th>
         <th>synniaeg</th>
         <th>pilt</th>
+        <th>vanus</th>
     </tr>
     <?php
     while ($paring->fetch()) {
@@ -76,8 +76,7 @@ $paring->execute();
     <br>
     <input type="submit" value="OK">
 </form>
-
-</div>
+<a href="https://marijagorbunova23.thkit.ee/wp/?page_id=1587" id="silkawp">Konspekt Wordpressis</a>
 </body>
 </html>
 <?php

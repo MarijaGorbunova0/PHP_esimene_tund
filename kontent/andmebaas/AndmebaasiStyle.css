@@ -1,31 +1,64 @@
 
-  td {
-    border: 3px solid #993366;
-    border-collapse: collapse;
-     width: 100px;
-     text-align: center;
-}
-  th{
-      background: #b3b3ff;
-  }
-img{
-    width: 100px;
-    height: 100px;
-}
-table{
-    display: flex;
-    justify-content: center;
-}
-form {
-    margin: auto;
-    width: 300px;
-    padding-top:10px;
-    text-align: center;
-}
-h1,h2{
-    display: flex;
-    justify-content: center;
-}
-input{
-margin: 10px;
-}
+      body{
+          background: lightblue;
+      }
+    td {
+
+         width: 100px;
+         text-align: center;
+        border: 5px inset lightblue;
+
+    }
+      th{
+          background:  #d7e4fc;
+      }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    form{
+        margin: auto;
+        width: 300px;
+        padding-top:10px;
+        text-align: center;
+    }
+    input{
+    margin: 10px;
+    }
+    #all, h1, h2, table{
+        display: flex;
+        justify-content: center;
+    }
+    #silkawp{
+        display: flex;
+        justify-content: center;
+    }
+    a{
+      color: black;
+        text-decoration: none;
+    }
+    input[type=submit]{
+        background: skyblue;
+    }
+
+    input[type=text]:focus{
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        -webkit-transition: 0.5s;
+    }
+    input[type=text]{
+          box-sizing: border-box;
+          border: 3px solid #555;
+          -webkit-transition: 0.5s;
+    }
+    #sisu:hover{
+        border: 3px solid #993366;
+        border-collapse: collapse;
+    }
+      #sisu{
+          margin-left: 20px;
+          padding:20px;
+          background: lightpink;
+      }
+      #meny{text-align: center}

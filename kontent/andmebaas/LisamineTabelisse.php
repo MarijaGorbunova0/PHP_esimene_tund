@@ -34,7 +34,7 @@ $paring->execute();
 </head>
 <body>
 <h1>Loomad andmebaasist</h1>
-<table border="1px">
+<table>
     <tr>
         <th></th>
         <th>id</th>
