@@ -24,6 +24,9 @@
         <li>
             <a href="XML/Opilased/OpilasteXMLFailist.php" target="_blank">Õpilased</a>
         </li>
+        <li>
+            <a href="kontent/andmebaas/MatkaLisamine.php" target="_blank">Õpilased</a>
+        </li>
     </ul>
 </nav>
 
